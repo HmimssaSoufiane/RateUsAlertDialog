@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         //
         if (!DialogCheck._DialogCheck()) {
 
+
             final RateUsDialogDialog _dialog = new RateUsDialogDialog(this);
             _dialog._setTitle("Please Rate Us").
                     _url_your_app("Your privacy url ").
