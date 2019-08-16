@@ -20,25 +20,18 @@ public class SmartRate {
     private static final String SP_KEY_INIT_TIME = "SP_KEY_INIT_TIME";
     private static final long DEFAULT_TIME_BETWEEN_DIALOG_MS = 1000l * 60 * 60 * 24 * 6; // 3 days
     private static final long DEFAULT_DELAY_TO_ACTIVATE_MS = 1000l * 60 * 60 * 24 * 3; // 3 days
-    private static String DEFAULT_TEXT_LATER = "Ask me later";
-
-    private static boolean continueClicked = false;
 
 
     public static void Rate(
             final Activity activity
             , final String _title
-            , final String _later_text
             , final int _hoursBetweenCalls
             , final int _hoursDelayToActivate
     ) {
 
-        final String later_text = (_later_text != null && !_later_text.equals("")) ? _later_text : DEFAULT_TEXT_LATER;
         final long timeBetweenCalls_Ms = (_hoursBetweenCalls >= 0 && _hoursBetweenCalls < 366 * 24) ? 1000l * 60 * 60 * _hoursBetweenCalls : DEFAULT_TIME_BETWEEN_DIALOG_MS;
         final long timeDelayToActivate_Ms = (_hoursDelayToActivate >= 0 && _hoursDelayToActivate < 366 * 24) ? 1000l * 60 * 60 * _hoursDelayToActivate : DEFAULT_DELAY_TO_ACTIVATE_MS;
 
-
-        continueClicked = false;
 
         if (_hoursBetweenCalls != -1 && _hoursDelayToActivate != -1) {
             // no force asking mode
