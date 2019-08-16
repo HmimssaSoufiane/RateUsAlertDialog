@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PrivacyPolicyDialog-AlertDialog</string>
+    <string name="app_name">RateUsDialog-AlertDialog</string>
     <string name="main_two">Main two</string>
     <string name="dialogMessage">We want to inform you that our app personalizes your advertising experience though specific advertising networks by clicking continue your are agree to the\u0020 </string>
 
