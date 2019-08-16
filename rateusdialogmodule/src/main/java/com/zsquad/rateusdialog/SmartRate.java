@@ -24,7 +24,6 @@ public class SmartRate {
 
     public static void Rate(
             final Activity activity
-            , final String _title
             , final int _hoursBetweenCalls
             , final int _hoursDelayToActivate
     ) {
