@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/alert_LAY_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/dialog_border"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/alert_LBL_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/title"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alert_LBL_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/content_text_tv"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/alert_LBL_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal"
+                android:text="@string/content_text_tv_two"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/alert_IMG_google"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_google_play"
+                android:contentDescription="@string/todo" />
+
+            <LinearLayout
+                android:id="@+id/alert_LAY_stars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/alert_BTN_star_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_star_deactive"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/alert_BTN_star_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_star_deactive"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/alert_BTN_star_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_star_deactive"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/alert_BTN_star_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_star_deactive"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/alert_BTN_star_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_star_deactive"
+                    android:contentDescription="@string/todo" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/image_dem"
+                android:layout_height="@dimen/image_dem"
+                android:src="@drawable/ic_rating" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/alert_BTN_ok"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:minLines="2"
+                android:paddingLeft="36dp"
+                android:paddingTop="16dp"
+                android:paddingRight="36dp"
+                android:paddingBottom="16dp"
+                android:text="@string/ok_btn"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/alert_BTN_later"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/dialog_valide_cancel_w"
+                android:layout_height="@dimen/dialog_valide_cancel_h"
+                android:layout_margin="5dp"
+                android:background="@drawable/dialog_buttons_border"
+                android:text="@string/stop_btn"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/alert_BTN_stop"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/dialog_valide_cancel_w"
+                android:layout_height="@dimen/dialog_valide_cancel_h"
+                android:layout_margin="5dp"
+                android:background="@drawable/dialog_buttons_border"
+                android:text="@string/later_btn"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
