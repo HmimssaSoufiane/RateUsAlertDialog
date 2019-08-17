@@ -46,13 +46,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // first call after 3 days, the dialog will appear every 2 days until the user rates the app / or clicks on NEVER ASK AGAIN button
                 SmartRate.Rate(MainActivity.this
-                        , "Rate Us"
+                        , ""
                         , "Tell others what you think about this app"
                         , "Continue"
-                        , "Please take a moment and rate us on Google Play"
-                        , "click here"
-                        , "Ask me later"
-                        , "Never ask again"
+                        , ""
+                        , "Click here"
+                        , "Later"
+                        , "No Thanks"
                         , "Cancel"
                         , "Thanks for the feedback"
                         , Color.parseColor("#0878D1")

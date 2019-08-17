@@ -4,7 +4,7 @@
     android:id="@+id/alert_LAY_back"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff">
+    android:background="@null">
 
 
     <LinearLayout
@@ -142,6 +142,7 @@
             </LinearLayout>
 
             <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imageview_rating_hand"
                 android:layout_width="@dimen/image_dem"
                 android:layout_height="@dimen/image_dem"
                 android:src="@drawable/ic_rating" />
@@ -182,7 +183,7 @@
                 android:layout_height="@dimen/dialog_valide_cancel_h"
                 android:layout_margin="5dp"
                 android:background="@drawable/dialog_buttons_border"
-                android:text="@string/stop_btn"
+                android:text="@string/later_btn"
                 android:textColor="#fff" />
 
             <Button
@@ -192,7 +193,7 @@
                 android:layout_height="@dimen/dialog_valide_cancel_h"
                 android:layout_margin="5dp"
                 android:background="@drawable/dialog_buttons_border"
-                android:text="@string/later_btn"
+                android:text="@string/stop_btn"
                 android:textColor="#fff" />
 
         </LinearLayout>

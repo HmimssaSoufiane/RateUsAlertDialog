@@ -11,6 +11,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.AppCompatImageView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
@@ -34,10 +35,10 @@ public class SmartRate {
     private static int selectedStar = 1;
     private static final long DEFAULT_TIME_BETWEEN_DIALOG_MS = 1000l * 60 * 60 * 24 * 6; // 3 days
     private static final long DEFAULT_DELAY_TO_ACTIVATE_MS = 1000l * 60 * 60 * 24 * 3; // 3 days
-    private static String DEFAULT_TEXT_TITLE = "Rate Us";
+    private static String DEFAULT_TEXT_TITLE = "Please Rate Us";
     private static String DEFAULT_TEXT_CONTENT = "Tell others what you think about this app";
     private static String DEFAULT_TEXT_CONTINUE = "Continue";
-    private static String DEFAULT_TEXT_GOOGLE_PLAY = "Please take a moment and rate us on Google Play";
+    private static String DEFAULT_TEXT_GOOGLE_PLAY = "Please take a moment and rate us on Google Play Your feedback will help others find great learning experiences and it will help us build better and more apps for Android. And, we’ll be ";
     private static String DEFAULT_TEXT_CLICK_HERE = "click here";
     private static String DEFAULT_TEXT_LATER = "Later";
     private static String DEFAULT_TEXT_STOP = "No Thanks";
@@ -221,14 +222,14 @@ public class SmartRate {
 
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(activity);
         LayoutInflater inflater = activity.getLayoutInflater();
-        View dialogView = inflater.inflate(R.layout.dialog_rate, null);
+        final View dialogView = inflater.inflate(R.layout.dialog_rate, null);
         dialogBuilder.setView(dialogView);
         final AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.setCancelable(false);
         alertDialog.setCanceledOnTouchOutside(false);
 
-        //alertDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        //alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        alertDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         final RelativeLayout alert_LAY_back = dialogView.findViewById(R.id.alert_LAY_back);
         final AppCompatButton alert_BTN_ok = dialogView.findViewById(R.id.alert_BTN_ok);
@@ -249,8 +250,8 @@ public class SmartRate {
 
         alert_LBL_google.setVisibility(View.GONE);
         alert_IMG_google.setVisibility(View.GONE);
-        alert_LAY_back.setBackgroundColor(mainColor);
-        alert_BTN_ok.getBackground().setColorFilter(mainColor, PorterDuff.Mode.MULTIPLY);
+        //alert_LAY_back.setBackgroundColor(mainColor);
+        //alert_BTN_ok.getBackground().setColorFilter(mainColor, PorterDuff.Mode.MULTIPLY);
         alert_LBL_title.setTextColor(mainColor);
         alert_LBL_content.setTextColor(mainColor);
 
@@ -325,6 +326,8 @@ public class SmartRate {
                             alert_LBL_content.setVisibility(View.GONE);
                             alert_LAY_stars.setVisibility(View.GONE);
                             alert_BTN_stop.setVisibility(View.GONE);
+                            AppCompatImageView imageview_rating_hand=dialogView.findViewById(R.id.imageview_rating_hand);
+                            imageview_rating_hand.setVisibility(View.GONE);
                             alert_LBL_google.setVisibility(View.VISIBLE);
                             alert_IMG_google.setVisibility(View.VISIBLE);
                             alert_LBL_google.setText(googlePlay_text);
@@ -386,8 +389,6 @@ public class SmartRate {
             alert_BTN_stop.setVisibility(View.GONE);
         }
 
-        alertDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         alertDialog.show();
     }
 
@@ -424,7 +425,6 @@ public class SmartRate {
         editor.putLong(SP_KEY_INIT_TIME, time);
         editor.apply();
     }
-
 
 
 }

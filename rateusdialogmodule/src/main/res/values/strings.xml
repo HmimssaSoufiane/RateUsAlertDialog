@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">SmartRate</string>
-    <string name="testTest"> Please take a moment and rate us on Google Play Your feedback will help others find great learning experiences and it will help us build better and more apps for Android. And, we’ll be forever grateful to you. </string>
-    <string name="Dialog_title">Please Rate Us </string>
-    <string name="content_text_tv">Content</string>
+     <string name="content_text_tv">Content</string>
      <string name="content_text_tv_two">Content</string>
     <string name="stop_btn">STOP BTN</string>
     <string name="later_btn">LATER BTN</string>
