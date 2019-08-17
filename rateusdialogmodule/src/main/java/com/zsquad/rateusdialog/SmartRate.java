@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatImageView;
@@ -310,8 +311,6 @@ public class SmartRate {
 
                     if (continueClicked) {
                         setLastAskTime(activity, DONT_ASK_AGAIN_VALUE);
-
-
                         if (selectedStar >= _openStoreFrom_Stars) {
                             launchMarket(activity);
                         } else {
@@ -322,16 +321,16 @@ public class SmartRate {
                         if (openStoreFromXStars != -1 && selectedStar >= _openStoreFrom_Stars) {
                             continueClicked = true;
 
+                            (dialogView.findViewById(R.id.imageview_rating_hand)).setVisibility(View.GONE);
                             alert_LBL_title.setVisibility(View.GONE);
                             alert_LBL_content.setVisibility(View.GONE);
                             alert_LAY_stars.setVisibility(View.GONE);
                             alert_BTN_stop.setVisibility(View.GONE);
-                            AppCompatImageView imageview_rating_hand=dialogView.findViewById(R.id.imageview_rating_hand);
-                            imageview_rating_hand.setVisibility(View.GONE);
+                            //alert_BTN_ok.setText(clickHere_text);
+                            alert_BTN_ok.setVisibility(View.GONE);
                             alert_LBL_google.setVisibility(View.VISIBLE);
                             alert_IMG_google.setVisibility(View.VISIBLE);
                             alert_LBL_google.setText(googlePlay_text);
-                            alert_BTN_ok.setText(clickHere_text);
                             alert_BTN_later.setText(cancel_text);
 
 
@@ -350,7 +349,9 @@ public class SmartRate {
         } else {
             alert_BTN_ok.setVisibility(View.INVISIBLE);
         }
+
         alert_BTN_ok.setEnabled(false);
+
 
         if (hideNeverAskAgain) {
             alert_BTN_stop.setVisibility(View.GONE);
