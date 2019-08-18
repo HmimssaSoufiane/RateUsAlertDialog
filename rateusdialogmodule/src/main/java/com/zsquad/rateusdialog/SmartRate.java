@@ -19,6 +19,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -232,7 +233,7 @@ public class SmartRate {
         alertDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-        final RelativeLayout alert_LAY_back = dialogView.findViewById(R.id.alert_LAY_back);
+        final LinearLayout alert_LAYOUT_google = dialogView.findViewById(R.id.alert_LAYOUT_google);
         final AppCompatButton alert_BTN_ok = dialogView.findViewById(R.id.alert_BTN_ok);
         final Button alert_BTN_later = dialogView.findViewById(R.id.alert_BTN_later);
         final Button alert_BTN_stop = dialogView.findViewById(R.id.alert_BTN_stop);
@@ -240,7 +241,6 @@ public class SmartRate {
         final TextView alert_LBL_content = dialogView.findViewById(R.id.alert_LBL_content);
         final TextView alert_LBL_google = dialogView.findViewById(R.id.alert_LBL_google);
         final View alert_LAY_stars = dialogView.findViewById(R.id.alert_LAY_stars);
-        final ImageView alert_IMG_google = dialogView.findViewById(R.id.alert_IMG_google);
         final ImageButton alert_BTN_star_1 = dialogView.findViewById(R.id.alert_BTN_star_1);
         final ImageButton alert_BTN_star_2 = dialogView.findViewById(R.id.alert_BTN_star_2);
         final ImageButton alert_BTN_star_3 = dialogView.findViewById(R.id.alert_BTN_star_3);
@@ -250,7 +250,7 @@ public class SmartRate {
 
 
         alert_LBL_google.setVisibility(View.GONE);
-        alert_IMG_google.setVisibility(View.GONE);
+        alert_LAYOUT_google.setVisibility(View.GONE);
         //alert_LAY_back.setBackgroundColor(mainColor);
         //alert_BTN_ok.getBackground().setColorFilter(mainColor, PorterDuff.Mode.MULTIPLY);
         alert_LBL_title.setTextColor(mainColor);
@@ -320,18 +320,19 @@ public class SmartRate {
                     } else {
                         if (openStoreFromXStars != -1 && selectedStar >= _openStoreFrom_Stars) {
                             continueClicked = true;
-                            alert_IMG_google.setOnClickListener(this);
+                            /* chagemenet */
+
+                            alert_LAYOUT_google.setOnClickListener(this);
+
                             (dialogView.findViewById(R.id.imageview_rating_hand)).setVisibility(View.GONE);
                             alert_LBL_title.setVisibility(View.GONE);
                             alert_LBL_content.setVisibility(View.GONE);
                             alert_LAY_stars.setVisibility(View.GONE);
                             alert_BTN_stop.setVisibility(View.GONE);
-                            //
 
-                            //alert_BTN_ok.setText(clickHere_text);
                             alert_BTN_ok.setVisibility(View.GONE);
                             alert_LBL_google.setVisibility(View.VISIBLE);
-                            alert_IMG_google.setVisibility(View.VISIBLE);
+                            alert_LAYOUT_google.setVisibility(View.VISIBLE);
                             alert_LBL_google.setText(googlePlay_text);
                             alert_BTN_later.setText(cancel_text);
 
