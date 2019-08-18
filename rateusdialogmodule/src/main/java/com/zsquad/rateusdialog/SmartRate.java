@@ -320,12 +320,14 @@ public class SmartRate {
                     } else {
                         if (openStoreFromXStars != -1 && selectedStar >= _openStoreFrom_Stars) {
                             continueClicked = true;
-
+                            alert_IMG_google.setOnClickListener(this);
                             (dialogView.findViewById(R.id.imageview_rating_hand)).setVisibility(View.GONE);
                             alert_LBL_title.setVisibility(View.GONE);
                             alert_LBL_content.setVisibility(View.GONE);
                             alert_LAY_stars.setVisibility(View.GONE);
                             alert_BTN_stop.setVisibility(View.GONE);
+                            //
+
                             //alert_BTN_ok.setText(clickHere_text);
                             alert_BTN_ok.setVisibility(View.GONE);
                             alert_LBL_google.setVisibility(View.VISIBLE);
