@@ -235,6 +235,7 @@ public class SmartRate {
 
         final LinearLayout alert_LAYOUT_google = dialogView.findViewById(R.id.alert_LAYOUT_google);
         final AppCompatButton alert_BTN_ok = dialogView.findViewById(R.id.alert_BTN_ok);
+        final AppCompatImageView imageview_rating_hand=dialogView.findViewById(R.id.imageview_rating_hand);
         final Button alert_BTN_later = dialogView.findViewById(R.id.alert_BTN_later);
         final Button alert_BTN_stop = dialogView.findViewById(R.id.alert_BTN_stop);
         final TextView alert_LBL_title = dialogView.findViewById(R.id.alert_LBL_title);
@@ -263,6 +264,8 @@ public class SmartRate {
         View.OnClickListener starsClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                imageview_rating_hand.setVisibility(View.GONE);
+                alert_BTN_ok.setVisibility(View.VISIBLE);
                 int clickedIndex = -1;
                 for (int i = 0; i < stars.length; i++) {
                     if (stars[i].getId() == v.getId()) {
@@ -281,7 +284,7 @@ public class SmartRate {
                 }
 
                 alert_BTN_ok.setEnabled(true);
-                alert_BTN_ok.setText((clickedIndex + 1) + "/5\n" + continue_text);
+                alert_BTN_ok.setText((clickedIndex + 1) + "/5\nClick to" + continue_text);
                 selectedStar = clickedIndex + 1;
             }
         };
@@ -299,7 +302,6 @@ public class SmartRate {
 
         if (continue_text != null && !continue_text.equals("")) {
             alert_BTN_ok.setText(continue_text);
-            alert_BTN_ok.setText("?/5\n" + continue_text);
             alert_BTN_ok.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

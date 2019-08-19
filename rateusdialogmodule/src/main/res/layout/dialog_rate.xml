@@ -38,15 +38,15 @@
             android:layout_marginRight="16dp"
             android:gravity="center_horizontal"
             android:text="@string/content_text_tv"
-             android:textSize="16sp" />
+            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="4dp"
-            android:gravity="center"
             android:layout_marginRight="16dp"
+            android:gravity="center"
             android:orientation="vertical"
             android:padding="8dp">
 
@@ -60,21 +60,21 @@
                 android:layout_marginBottom="12dp"
                 android:gravity="center_horizontal"
                 android:text="@string/content_text_tv_two"
-                 android:textSize="16sp" />
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:id="@+id/alert_LAYOUT_google"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:background="@drawable/dialog_border"
-                android:paddingLeft="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
                 android:paddingStart="60dp"
+                android:paddingLeft="60dp"
+                android:paddingTop="10dp"
                 android:paddingEnd="60dp"
                 android:paddingRight="60dp"
-                 android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:orientation="horizontal">
+                android:paddingBottom="10dp">
 
                 <ImageView
                     android:id="@+id/alert_IMG_google"
@@ -90,7 +90,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/Letsgo"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -109,10 +109,10 @@
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:background="@null"
+                    android:contentDescription="@string/todo"
                     android:padding="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_star_deactive"
-                    android:contentDescription="@string/todo" />
+                    android:src="@drawable/ic_star_deactive" />
 
                 <ImageButton
                     android:id="@+id/alert_BTN_star_2"
@@ -121,10 +121,10 @@
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:background="@null"
+                    android:contentDescription="@string/todo"
                     android:padding="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_star_deactive"
-                    android:contentDescription="@string/todo" />
+                    android:src="@drawable/ic_star_deactive" />
 
                 <ImageButton
                     android:id="@+id/alert_BTN_star_3"
@@ -133,10 +133,10 @@
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:background="@null"
+                    android:contentDescription="@string/todo"
                     android:padding="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_star_deactive"
-                    android:contentDescription="@string/todo" />
+                    android:src="@drawable/ic_star_deactive" />
 
                 <ImageButton
                     android:id="@+id/alert_BTN_star_4"
@@ -145,10 +145,10 @@
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:background="@null"
+                    android:contentDescription="@string/todo"
                     android:padding="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_star_deactive"
-                    android:contentDescription="@string/todo" />
+                    android:src="@drawable/ic_star_deactive" />
 
                 <ImageButton
                     android:id="@+id/alert_BTN_star_5"
@@ -157,10 +157,10 @@
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:background="@null"
+                    android:contentDescription="@string/todo"
                     android:padding="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_star_deactive"
-                    android:contentDescription="@string/todo" />
+                    android:src="@drawable/ic_star_deactive" />
             </LinearLayout>
 
             <android.support.v7.widget.AppCompatImageView
@@ -171,22 +171,22 @@
 
             <android.support.v7.widget.AppCompatButton
                 android:id="@+id/alert_BTN_ok"
-                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="12dp"
+                android:background="@drawable/dialog_border"
                 android:clickable="true"
-                android:minLines="2"
-                android:paddingLeft="36dp"
-                android:paddingTop="16dp"
-                android:paddingRight="36dp"
-                android:paddingBottom="16dp"
+                android:focusable="true"
+                android:paddingStart="60dp"
+                android:paddingLeft="60dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="60dp"
+                android:paddingRight="60dp"
+                android:paddingBottom="10dp"
                 android:text="@string/ok_btn"
-                android:textColor="#fff"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:focusable="true" />
+                android:visibility="gone" />
 
         </LinearLayout>
 
@@ -204,9 +204,8 @@
                 android:layout_width="@dimen/dialog_valide_cancel_w"
                 android:layout_height="@dimen/dialog_valide_cancel_h"
                 android:layout_margin="5dp"
-                android:background="@drawable/dialog_buttons_border"
-                android:text="@string/later_btn"
-                android:textColor="#fff" />
+                android:background="@drawable/dialog_border"
+                android:text="@string/later_btn" />
 
             <Button
                 android:id="@+id/alert_BTN_stop"
@@ -214,9 +213,8 @@
                 android:layout_width="@dimen/dialog_valide_cancel_w"
                 android:layout_height="@dimen/dialog_valide_cancel_h"
                 android:layout_margin="5dp"
-                android:background="@drawable/dialog_buttons_border"
-                android:text="@string/stop_btn"
-                android:textColor="#fff" />
+                android:background="@drawable/dialog_border"
+                android:text="@string/stop_btn"  />
 
         </LinearLayout>
 
