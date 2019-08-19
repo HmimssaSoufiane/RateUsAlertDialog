@@ -197,7 +197,6 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-
             <Button
                 android:id="@+id/alert_BTN_later"
                 style="?android:attr/borderlessButtonStyle"
@@ -214,7 +213,7 @@
                 android:layout_height="@dimen/dialog_valide_cancel_h"
                 android:layout_margin="5dp"
                 android:background="@drawable/dialog_border"
-                android:text="@string/stop_btn"  />
+                android:text="@string/stop_btn" />
 
         </LinearLayout>
 

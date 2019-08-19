@@ -284,7 +284,7 @@ public class SmartRate {
                 }
 
                 alert_BTN_ok.setEnabled(true);
-                alert_BTN_ok.setText((clickedIndex + 1) + "/5\nClick to" + continue_text);
+                alert_BTN_ok.setText((clickedIndex + 1) + "/5\nClick to " + continue_text);
                 selectedStar = clickedIndex + 1;
             }
         };
