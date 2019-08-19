@@ -252,8 +252,6 @@ public class SmartRate {
 
         alert_LBL_google.setVisibility(View.GONE);
         alert_LAYOUT_google.setVisibility(View.GONE);
-        //alert_LAY_back.setBackgroundColor(mainColor);
-        //alert_BTN_ok.getBackground().setColorFilter(mainColor, PorterDuff.Mode.MULTIPLY);
         alert_LBL_title.setTextColor(mainColor);
         alert_LBL_content.setTextColor(mainColor);
 
