@@ -255,7 +255,6 @@ public class SmartRate {
         alert_LBL_title.setTextColor(mainColor);
         alert_LBL_content.setTextColor(mainColor);
 
-
         final int drawable_active = R.drawable.ic_star_active;
         final int drawable_deactive = R.drawable.ic_star_deactive;
 
