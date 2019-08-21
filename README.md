@@ -4,4 +4,4 @@ this project based on guy-4444 his <a href="https://github.com/guy-4444/SmartRat
 # UI
 <img src="Screenshot_1566352570.png" width="250" >
 <img src="Screenshot_1566352556.png" width="250" >
-<img src="Screenshot_1566352404.pngg" width="250" >
+<img src="Screenshot_1566352404.png" width="250" >
