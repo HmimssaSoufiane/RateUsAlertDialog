@@ -185,7 +185,7 @@
                 android:paddingTop="10dp"
                 android:paddingEnd="60dp"
                 android:paddingRight="60dp"
-                android:paddingBottom="10dp"
+                android:paddingBottom="20dp"
                 android:text="@string/ok_btn"
                 android:textSize="22sp"
                 android:visibility="gone" />
