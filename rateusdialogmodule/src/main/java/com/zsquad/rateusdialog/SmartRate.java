@@ -40,7 +40,7 @@ public class SmartRate {
     private static String DEFAULT_TEXT_TITLE = "Please Rate Us";
     private static String DEFAULT_TEXT_CONTENT = "Tell others what you think about this app";
     private static String DEFAULT_TEXT_CONTINUE = "Continue";
-    private static String DEFAULT_TEXT_GOOGLE_PLAY = "Please take a moment and rate us on Google Play Your feedback will help others find great learning experiences and it will help us build better and more apps for Android. And, we’ll be ";
+    private static String DEFAULT_TEXT_GOOGLE_PLAY = " Please take a moment and rate us on Google Play ";
     private static String DEFAULT_TEXT_CLICK_HERE = "click here";
     private static String DEFAULT_TEXT_LATER = "Later";
     private static String DEFAULT_TEXT_STOP = "No Thanks";
@@ -48,7 +48,6 @@ public class SmartRate {
     private static String DEFAULT_TEXT_THANKS = "Thanks for the feedback";
 
     private static boolean continueClicked = false;
-
     public static void Rate(
             final Activity activity
             , final int mainColor

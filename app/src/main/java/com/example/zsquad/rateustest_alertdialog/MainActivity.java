@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                         , "Please Rate us !"
                         , "How many stars we deserve ?"
                         , "Continue"
-                        , ""
+                        ,  getString(R.string.motivation_to_rate_Message)
                         , "Click here"
                         , "Later"
                         , "No Thanks"

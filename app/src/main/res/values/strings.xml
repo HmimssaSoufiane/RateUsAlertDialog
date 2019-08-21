@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">RateUsDialog-AlertDialog</string>
     <string name="main_two">Main two</string>
-    <string name="dialogMessage">We want to inform you that our app personalizes your advertising experience though specific advertising networks by clicking continue your are agree to the\u0020 </string>
+    <string name="motivation_to_rate_Message">Please take a moment and rate us on Google Play Your feedback will help others find great learning experiences and it will help us build better and more apps for Android. And, we’ll be forever grateful to you. </string>
 
 </resources>

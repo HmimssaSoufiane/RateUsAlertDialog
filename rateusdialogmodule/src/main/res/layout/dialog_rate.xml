@@ -177,6 +177,8 @@
                 android:background="@drawable/dialog_buttons_border"
                 android:clickable="true"
                 android:textColor="#fff"
+                android:minLines="2"
+                android:textStyle="normal"
                 android:focusable="true"
                 android:paddingStart="60dp"
                 android:paddingLeft="60dp"
