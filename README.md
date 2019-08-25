@@ -33,7 +33,7 @@ this project based on guy-4444 his <a href="https://github.com/guy-4444/SmartRat
                         , "No Thanks" // stop asking button text - optional
                         , "Cancel" // button Cancel button text in the next dialog - optional
                         , "Thanks for the feedback" // thanks message to low star users - optional
-                        , Color.parseColor("#000000")
+                        , Color.parseColor("#000000") // dialog color
                         , 3  	 // how many stars to display the google play go dialog - optional
                         , 0 	 // time between calls (unit: Hours) - default is 6 days
                         , 0	 // Time to wait until you start asking for the first time (unit: Hours) - default is 3 days
