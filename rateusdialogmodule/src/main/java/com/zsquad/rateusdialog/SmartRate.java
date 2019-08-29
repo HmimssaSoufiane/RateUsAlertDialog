@@ -6,21 +6,17 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
-import android.os.Build;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.AppCompatButton;
-import android.support.v7.widget.AppCompatImageView;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatImageView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -48,6 +44,7 @@ public class SmartRate {
     private static String DEFAULT_TEXT_THANKS = "Thanks for the feedback";
 
     private static boolean continueClicked = false;
+
     public static void Rate(
             final Activity activity
             , final int mainColor
@@ -234,7 +231,7 @@ public class SmartRate {
 
         final LinearLayout alert_LAYOUT_google = dialogView.findViewById(R.id.alert_LAYOUT_google);
         final AppCompatButton alert_BTN_ok = dialogView.findViewById(R.id.alert_BTN_ok);
-        final AppCompatImageView imageview_rating_hand=dialogView.findViewById(R.id.imageview_rating_hand);
+        final AppCompatImageView imageview_rating_hand = dialogView.findViewById(R.id.imageview_rating_hand);
         final Button alert_BTN_later = dialogView.findViewById(R.id.alert_BTN_later);
         final Button alert_BTN_stop = dialogView.findViewById(R.id.alert_BTN_stop);
         final TextView alert_LBL_title = dialogView.findViewById(R.id.alert_LBL_title);
