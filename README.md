@@ -18,7 +18,7 @@ this project based on guy-4444 his <a href="https://github.com/guy-4444/SmartRat
 ### Step 2. Add the dependency
 ```
 	dependencies {
-	        implementation 'com.github.HmimssaSoufiane:RateUsAlertDialog:1.0.0'
+	        implementation 'com.github.HmimssaSoufiane:RateUsAlertDialog:2.0.0'
 		}
 ```
 ### Step 3 : call it where do you want inside your code.
